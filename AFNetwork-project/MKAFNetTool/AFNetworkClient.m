@@ -40,22 +40,10 @@
     // 获取完整的url路径
     NSString *url = [kBaseUrl stringByAppendingPathComponent:path];
     
-    [[AFHttpClient sharedClient] GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task,NSData *responseData) {
-        if (responseData.length > 0) {
-            NSDictionary *responseDic = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:nil];
-            
-            NSString *result = [[NSString alloc] initWithData:responseData  encoding:NSUTF8StringEncoding];
-            NSLog(@"respData is %@",result);
-            if (responseDic) {
-                if (success) {
-                    MKHandleBlock(success,task,responseDic);
-                } else {
-                    MKHandleBlock(failure,kTBJServiceStatusJSONDataError,task,nil);
-                }
-            } else {
-                MKHandleBlock(failure,kTBJServiceStatusJSONDataError,task,nil);
-            }
-        }
+    [[AFHttpClient sharedClient] GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task,NSDictionary * responseData) {
+        NSLog(@"%@", responseData);
+        success(responseData);
+
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (error.code != NSURLErrorCancelled) {
             TBJHttpLog(@"\n===================================\
@@ -63,7 +51,7 @@
                        \n\U0001F621\U0001F621\U0001F621\U0001F621\U0001F621: %@\
                        \n===================================",
                        task.currentRequest.URL, (params ?: @""), [error localizedDescription]);
-            MKHandleBlock(failure,kTBJServiceStatusJSONDataError,task,nil);
+            MKHandleBlock(failure,kTBJServiceStatusJSONDataError,nil);
         }
         
         
@@ -75,22 +63,9 @@
     // 获取完整的url路径
     NSString *url = [kBaseUrl stringByAppendingPathComponent:path];
     
-    [[AFHttpClient sharedClient] POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task,NSData *responseData) {
-        if (responseData.length > 0) {
-            NSDictionary *responseDic = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:nil];
-            
-            NSString *result = [[NSString alloc] initWithData:responseData  encoding:NSUTF8StringEncoding];
-            NSLog(@"respData is %@",result);
-            if (responseDic) {
-                if (success) {
-                    MKHandleBlock(success,task,responseDic);
-                } else {
-                    MKHandleBlock(failure,kTBJServiceStatusJSONDataError,task,nil);
-                }
-            } else {
-                MKHandleBlock(failure,kTBJServiceStatusJSONDataError,task,nil);
-            }
-        }
+    [[AFHttpClient sharedClient] POST:url parameters:params progress:nil success:^(NSURLSessionDataTask *task,NSDictionary * responseData) {
+        NSLog(@"%@", responseData);
+        success(responseData);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (error.code != NSURLErrorCancelled) {
             TBJHttpLog(@"\n===================================\
@@ -98,7 +73,7 @@
                        \n\U0001F621\U0001F621\U0001F621\U0001F621\U0001F621: %@\
                        \n===================================",
                        task.currentRequest.URL, (params ?: @""), [error localizedDescription]);
-            MKHandleBlock(failure,kTBJServiceStatusJSONDataError,task,nil);
+            MKHandleBlock(failure,kTBJServiceStatusJSONDataError,nil);
         }
         
         

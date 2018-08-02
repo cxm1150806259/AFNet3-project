@@ -57,92 +57,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "554808511.7379169"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[ViewController viewDidLoad]"
-                  moduleName = "AFNetwork-project"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xianminchen/Desktop/AFNetwork-project/AFNetwork-project/ViewController.m"
-                  timestampString = "554808511.824068"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__29-[ViewController viewDidLoad]_block_invoke"
-                  moduleName = "AFNetwork-project"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xianminchen/Desktop/AFNetwork-project/AFNetwork-project/ViewController.m"
-                  timestampString = "554808511.825717"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "112">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "554808511.737973"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "554808511.738012"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-            timestampString = "554808511.738053"
+            timestampString = "554892436.5021729"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "+postWithPath:params:success:failure:"
             landmarkType = "7">
             <Locations>
@@ -153,12 +73,12 @@
                   symbolName = "+[AFNetworkClient postWithPath:params:success:failure:]"
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xianminchen/Desktop/AFNetwork-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-                  timestampString = "554808511.841471"
+                  urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+                  timestampString = "554892436.554574"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
                   offsetFromSymbolStart = "212">
                </Location>
                <Location
@@ -168,27 +88,27 @@
                   symbolName = "__55+[AFNetworkClient postWithPath:params:success:failure:]_block_invoke"
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xianminchen/Desktop/AFNetwork-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-                  timestampString = "554808511.843124"
+                  urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+                  timestampString = "554892436.556302"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "88">
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "24">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.75"
+                  symbolName = "__destroy_helper_block_.65"
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xianminchen/Desktop/AFNetwork-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-                  timestampString = "554808511.8451329"
+                  urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+                  timestampString = "554892436.557988"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
@@ -201,11 +121,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-            timestampString = "554808511.738326"
+            timestampString = "554892436.502251"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "+postWithPath:params:success:failure:"
             landmarkType = "7">
          </BreakpointContent>
@@ -213,43 +133,27 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-            timestampString = "554808511.738518"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "+postWithPath:params:success:failure:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/MKAFNetTool/MKAccountService.m"
-            timestampString = "554808511.7387021"
+            timestampString = "554892436.502316"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "-getCode:codeID:success:failure:"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[MKAccountService getCode:codeID:success:failure:]"
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xianminchen/Desktop/AFNetwork-project/AFNetwork-project/MKAFNetTool/MKAccountService.m"
-                  timestampString = "554808511.858463"
+                  urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/MKAccountService.m"
+                  timestampString = "554884492.651219"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "30"
@@ -257,14 +161,14 @@
                   offsetFromSymbolStart = "324">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__51-[MKAccountService getCode:codeID:success:failure:]_block_invoke"
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xianminchen/Desktop/AFNetwork-project/AFNetwork-project/MKAFNetTool/MKAccountService.m"
-                  timestampString = "554808511.860045"
+                  urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/MKAccountService.m"
+                  timestampString = "554884492.652885"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "30"
@@ -272,14 +176,14 @@
                   offsetFromSymbolStart = "24">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__destroy_helper_block_"
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xianminchen/Desktop/AFNetwork-project/AFNetwork-project/MKAFNetTool/MKAccountService.m"
-                  timestampString = "554808511.861701"
+                  urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/MKAccountService.m"
+                  timestampString = "554884492.654819"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "30"
@@ -296,12 +200,153 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/MKAFNetTool/MKAccountService.m"
-            timestampString = "554808511.738744"
+            timestampString = "554892436.502369"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "-getCode:codeID:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+            timestampString = "554892436.502419"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "+postWithPath:params:success:failure:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[AFNetworkClient postWithPath:params:success:failure:]"
+                  moduleName = "AFNetwork-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+                  timestampString = "554892436.569622"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "380">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__55+[AFNetworkClient postWithPath:params:success:failure:]_block_invoke"
+                  moduleName = "AFNetwork-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+                  timestampString = "554892436.571141"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__copy_helper_block_.64"
+                  moduleName = "AFNetwork-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+                  timestampString = "554892436.572716"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__55+[AFNetworkClient postWithPath:params:success:failure:]_block_invoke.67"
+                  moduleName = "AFNetwork-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+                  timestampString = "554892436.5742821"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.69"
+                  moduleName = "AFNetwork-project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+                  timestampString = "554892436.575889"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+            timestampString = "554892436.502474"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "+postWithPath:params:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+            timestampString = "554892436.50252"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "+postWithPath:params:success:failure:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
+            timestampString = "554892436.502564"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "+postWithPath:params:success:failure:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

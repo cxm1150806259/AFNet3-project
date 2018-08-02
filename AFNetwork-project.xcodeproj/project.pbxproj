@@ -15,6 +15,7 @@
 		A03B508121115C9B00F6E0D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A03B508021115C9B00F6E0D5 /* main.m */; };
 		A03B508B21115F1B00F6E0D5 /* AFNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A03B508A21115F1B00F6E0D5 /* AFNetworkClient.m */; };
 		A03B508F21119D2800F6E0D5 /* MKAccountService.m in Sources */ = {isa = PBXBuildFile; fileRef = A03B508E21119D2800F6E0D5 /* MKAccountService.m */; };
+		A03B50942112E8DC00F6E0D5 /* MKPersonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A03B50932112E8DC00F6E0D5 /* MKPersonInfo.m */; };
 		DD2BFE77B4441A20D8F0AE81 /* libPods-AFNetwork-project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17ABB4BDD4009AAABC4A14FB /* libPods-AFNetwork-project.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,8 @@
 		A03B508D21119D2800F6E0D5 /* MKAccountService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKAccountService.h; sourceTree = "<group>"; };
 		A03B508E21119D2800F6E0D5 /* MKAccountService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKAccountService.m; sourceTree = "<group>"; };
 		A03B50902111A50E00F6E0D5 /* GlobalAppDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalAppDefines.h; sourceTree = "<group>"; };
+		A03B50922112E8DC00F6E0D5 /* MKPersonInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKPersonInfo.h; sourceTree = "<group>"; };
+		A03B50932112E8DC00F6E0D5 /* MKPersonInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKPersonInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 		A03B50912111A61D00F6E0D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A03B50922112E8DC00F6E0D5 /* MKPersonInfo.h */,
+				A03B50932112E8DC00F6E0D5 /* MKPersonInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			files = (
 				A03B508B21115F1B00F6E0D5 /* AFNetworkClient.m in Sources */,
 				A03B508F21119D2800F6E0D5 /* MKAccountService.m in Sources */,
+				A03B50942112E8DC00F6E0D5 /* MKPersonInfo.m in Sources */,
 				A03B507621115C9800F6E0D5 /* ViewController.m in Sources */,
 				A03B508121115C9B00F6E0D5 /* main.m in Sources */,
 				A03B507321115C9800F6E0D5 /* AppDelegate.m in Sources */,

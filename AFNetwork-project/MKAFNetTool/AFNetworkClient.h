@@ -25,8 +25,8 @@ typedef NS_ENUM(NSInteger, MKServiceStatus) {
     kTBJServiceStatusOther                                  // 其他错误
 };
 
-typedef void(^HttpSuccessBlock)(NSURLSessionDataTask *task,NSDictionary *requestBodyInfo);
-typedef void(^HttpFailureBlock)(MKServiceStatus serviceCode, NSURLSessionDataTask *requestOP, NSError *error);
+typedef void(^HttpSuccessBlock)(NSDictionary *requestBodyInfo);
+typedef void(^HttpFailureBlock)(MKServiceStatus serviceCode, NSError *error);
 typedef void(^HttpDownloadProgressBlock)(CGFloat progress);
 typedef void(^HttpUploadProgressBlock)(CGFloat progress);
 typedef void(^HttpSuccessBlock2)(id json);

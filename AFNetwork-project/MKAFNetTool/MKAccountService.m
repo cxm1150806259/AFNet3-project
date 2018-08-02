@@ -8,6 +8,7 @@
 
 #import "MKAccountService.h"
 #import "GlobalAppDefines.h"
+#import "MKPersonInfo.h"
 @implementation MKAccountService
 +(instancetype)sharedService
 {
@@ -27,10 +28,27 @@
     [params setObject:phone forKey:@"phone"];
     [params setObject:code_type_id forKey:@"code_type_id"];
     
-    [AFNetworkClient postWithPath:@"tools/2.0/get_mobile_code" params:params success:^(NSURLSessionDataTask * _Nonnull task,NSDictionary *requestBodyInfo) {
-        MKHandleBlock(success,[requestBodyInfo objectForKey:@"code"],[requestBodyInfo objectForKey:@"msg"],[requestBodyInfo objectForKey:@"status"]);
-    } failure:^(MKServiceStatus serviceCode, NSURLSessionDataTask *task, NSError *error) {
-        MKHandleBlock(failure,serviceCode,task,error);
+    [AFNetworkClient postWithPath:@"tools/2.0/get_mobile_code" params:params success:^(NSDictionary *requestBodyInfo) {
+        success([requestBodyInfo objectForKey:@"code"],[requestBodyInfo objectForKey:@"msg"],[requestBodyInfo objectForKey:@"status"]);
+    } failure:^(MKServiceStatus serviceCode,NSError *error) {
+        failure(serviceCode,nil,error);
+    }];
+}
+
+#pragma mark --登录
+-(void)login:(NSString *)phone pass:(NSString *)password success:(void (^)(NSString *code,NSString *msg,NSString *status,MKPersonInfo *personInfo))success failure:(void (^)(MKServiceStatus, NSURLSessionDataTask *, NSError *))failure
+{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    [params setObject:phone forKey:@"phone"];
+    [params setObject:password forKey:@"password"];
+    
+    [AFNetworkClient postWithPath:@"/god/2.2/login" params:params success:^(NSDictionary *requestBodyInfo) {
+        NSDictionary *dataDic = [requestBodyInfo objectForKey:@"data"];
+        NSLog(@"requestBodyInfo content:%@",requestBodyInfo);
+        MKPersonInfo *personInfo = [dataDic returnPersonInfo];
+        success([requestBodyInfo objectForKey:@"code"],[requestBodyInfo objectForKey:@"msg"],[requestBodyInfo objectForKey:@"status"],personInfo);
+    } failure:^(MKServiceStatus serviceCode, NSError *error) {
+        failure(serviceCode,nil,error);
     }];
 }
 @end
