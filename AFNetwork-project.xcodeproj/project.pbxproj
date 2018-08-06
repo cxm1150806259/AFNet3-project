@@ -16,6 +16,7 @@
 		A03B508B21115F1B00F6E0D5 /* AFNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A03B508A21115F1B00F6E0D5 /* AFNetworkClient.m */; };
 		A03B508F21119D2800F6E0D5 /* MKAccountService.m in Sources */ = {isa = PBXBuildFile; fileRef = A03B508E21119D2800F6E0D5 /* MKAccountService.m */; };
 		A03B50942112E8DC00F6E0D5 /* MKPersonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A03B50932112E8DC00F6E0D5 /* MKPersonInfo.m */; };
+		A03B50962117F44300F6E0D5 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03B50952117F44300F6E0D5 /* CoreBluetooth.framework */; };
 		DD2BFE77B4441A20D8F0AE81 /* libPods-AFNetwork-project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17ABB4BDD4009AAABC4A14FB /* libPods-AFNetwork-project.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		A03B50902111A50E00F6E0D5 /* GlobalAppDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalAppDefines.h; sourceTree = "<group>"; };
 		A03B50922112E8DC00F6E0D5 /* MKPersonInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKPersonInfo.h; sourceTree = "<group>"; };
 		A03B50932112E8DC00F6E0D5 /* MKPersonInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKPersonInfo.m; sourceTree = "<group>"; };
+		A03B50952117F44300F6E0D5 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03B50962117F44300F6E0D5 /* CoreBluetooth.framework in Frameworks */,
 				DD2BFE77B4441A20D8F0AE81 /* libPods-AFNetwork-project.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +126,7 @@
 		F295B61EB1F93FA288B24243 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A03B50952117F44300F6E0D5 /* CoreBluetooth.framework */,
 				17ABB4BDD4009AAABC4A14FB /* libPods-AFNetwork-project.a */,
 			);
 			name = Frameworks;

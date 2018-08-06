@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import <CoreBluetooth/CoreBluetooth.h>
+@interface ViewController : UIViewController<CBCentralManagerDelegate,CBPeripheralDelegate>
 
 
 @end
