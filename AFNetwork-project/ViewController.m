@@ -26,6 +26,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *shakeBtn;
 @property (weak, nonatomic) IBOutlet UIButton *stopShakeBtn;
 @property (weak, nonatomic) IBOutlet UITextView *deviceInfoList;
+- (IBAction)scanPress:(id)sender;
+- (IBAction)disconnectPress:(id)sender;
+- (IBAction)shakePress:(id)sender;
+- (IBAction)stopShakePress:(id)sender;
 @end
 
 @implementation ViewController
@@ -38,6 +42,7 @@
     
     
 }
+
 /** 判断手机蓝牙状态
  CBManagerStateUnknown = 0,  未知
  CBManagerStateResetting,    重置中
@@ -50,6 +55,7 @@
     // 蓝牙可用，开始扫描外设
     if (central.state == CBManagerStatePoweredOn) {
         NSLog(@"蓝牙可用");
+        self.centralManager = central;
         // 根据SERVICE_UUID来扫描外设，如果不设置SERVICE_UUID，则扫描所有蓝牙设备
 //        [central scanForPeripheralsWithServices:@[[CBUUID UUIDWithString:SERVICE_UUID]] options:nil];
 //        [central scanForPeripheralsWithServices:nil options:nil];
@@ -186,4 +192,17 @@
     NSLog(@"写入成功");
 }
 
+- (IBAction)scanPress:(id)sender {
+    [self.centralManager scanForPeripheralsWithServices:nil options:nil];
+}
+
+- (IBAction)disconnectPress:(id)sender {
+    
+}
+
+- (IBAction)shakePress:(id)sender {
+}
+
+- (IBAction)stopShakePress:(id)sender {
+}
 @end
