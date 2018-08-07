@@ -12,7 +12,10 @@
 
 #define SERVICE_UUID        @"CDD1"
 #define CHARACTERISTIC_UUID @"CDD2"
-
+#define STEP    @"FF06"
+#define BATTERY @"FF0C"
+#define VIBRATE @"2A06"
+#define DEVICE  @"FF01"
 @interface ViewController () 
 @property (nonatomic, strong) CBCentralManager *centralManager;
 @property (nonatomic, strong) CBPeripheral *peripheral;
@@ -34,12 +37,13 @@
 
 @implementation ViewController
 //@synthesize age = _age;
+@synthesize deviceInfoList = _deviceInfoList;
 - (void)viewDidLoad {
     [super viewDidLoad];
     //创建中心设备管理器，会回调CentralManagerDidUpdateState
-    self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue()];
+    self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
     
-    
+    [_deviceInfoList setEditable:false];
     
 }
 
@@ -72,34 +76,16 @@
 /** 发现符合要求的外设，回调 */
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *, id> *)advertisementData RSSI:(NSNumber *)RSSI {
     NSLog(@"Find device:%@",[peripheral name]);
-//    if (![_deviceDic objectForKey:[peripheral name]]) {
-//        NSLog(@"Find device:%@",[peripheral name]);
-//        if (peripheral!=nil) {
-//            if ([peripheral name]!=nil) {
-//                if ([[peripheral name] hasPrefix:@"M"]) {
-//                    [_deviceDic setObject:peripheral forKey:[peripheral name]];
-//                    //停止扫描，看需求决定要不要加
-////                    [_centralManager stopScan];
-//                    //将设备信息传到外面的页面（VC），构成扫描到的设备列表
-////                    if ([self.delegate respondsToSelector:@selector(dataWithBluetoothDic:)]) {
-//////                        [self.delegate dataWithBluetoothDic:_deviceDic];
-////                    }
-//                }
-//            }
-//        }
-//    }
-    if ([[peripheral name] hasPrefix:@"M"]){
+    if ([[peripheral name] hasPrefix:@"MI"]){
         // 对外设对象进行强引用
         self.peripheral = peripheral;
-        
-        //    if ([peripheral.name hasPrefix:@"WH"]) {
-        //        // 可以根据外设名字来过滤外设
-        //        [central connectPeripheral:peripheral options:nil];
-        //    }
-        
+
         // 连接外设
         [central connectPeripheral:peripheral options:nil];
+        self.deviceInfoList.text = [NSString stringWithFormat:@"发现手环\n名称：%@\nUUID:\n%@\n",self.peripheral.name,self.peripheral.identifier.UUIDString];
+        NSLog(@"外围设备信号：%lu",_peripheral.RSSI);
     }
+    
     
 }
 
@@ -110,7 +96,9 @@
     // 设置代理
     peripheral.delegate = self;
     // 根据UUID来寻找服务
-    [peripheral discoverServices:@[[CBUUID UUIDWithString:SERVICE_UUID]]];
+//    [peripheral discoverServices:@[[CBUUID UUIDWithString:SERVICE_UUID]]];
+    [peripheral discoverServices:nil];
+
     NSLog(@"连接成功");
 }
 
@@ -123,7 +111,7 @@
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(nullable NSError *)error {
     NSLog(@"断开连接");
     // 断开连接可以设置重新连接
-    [central connectPeripheral:peripheral options:nil];
+//    [central connectPeripheral:peripheral options:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -135,56 +123,95 @@
 
 /** 发现服务 */
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error {
-    
-    // 遍历出外设中所有的服务
-    for (CBService *service in peripheral.services) {
-        NSLog(@"所有的服务：%@",service);
+    if (error != nil) {
+        self.statusLabel.text =@"查找服务失败";
+        return;
+    } else {
+        for (CBService *service in peripheral.services) {
+            [peripheral discoverCharacteristics:nil  forService:service];
+        }
     }
-    
-    // 这里仅有一个服务，所以直接获取
-    CBService *service = peripheral.services.lastObject;
-    // 根据UUID寻找服务中的特征
-    [peripheral discoverCharacteristics:@[[CBUUID UUIDWithString:CHARACTERISTIC_UUID]] forService:service];
+//
+//    // 遍历出外设中所有的服务
+//    for (CBService *service in peripheral.services) {
+//        NSLog(@"所有的服务：%@",service);
+//    }
+//
+//    // 这里仅有一个服务，所以直接获取
+//    CBService *service = peripheral.services.lastObject;
+//    // 根据UUID寻找服务中的特征
+////    [peripheral discoverCharacteristics:@[[CBUUID UUIDWithString:CHARACTERISTIC_UUID]] forService:service];
+//    [peripheral discoverCharacteristics:nil  forService:service];
 }
 
 /** 发现特征回调 */
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error {
-    
-    // 遍历出所需要的特征
-    for (CBCharacteristic *characteristic in service.characteristics) {
-        NSLog(@"所有特征：%@", characteristic);
-        // 从外设开发人员那里拿到不同特征的UUID，不同特征做不同事情，比如有读取数据的特征，也有写入数据的特征
+    if (error != nil) {
+        self.statusLabel.text = @"查找服务失败";
+        return;
+    } else {
+        for (CBCharacteristic *characteristic in service.characteristics)
+        {
+            // 订阅通知
+            [peripheral setNotifyValue:YES forCharacteristic:characteristic];
+            if ([characteristic.UUID.UUIDString  isEqual: BATTERY]) {
+                [peripheral readValueForCharacteristic:characteristic];
+            } else if([characteristic.UUID.UUIDString  isEqual: DEVICE]){
+                [peripheral readValueForCharacteristic:characteristic];
+            }else if ([characteristic.UUID.UUIDString isEqual:VIBRATE]){
+                _characteristic = characteristic;
+            }
+        }
     }
-    
-    // 这里只获取一个特征，写入数据的时候需要用到这个特征
-    self.characteristic = service.characteristics.lastObject;
-    
-    // 直接读取这个特征数据，会调用didUpdateValueForCharacteristic
-    [peripheral readValueForCharacteristic:self.characteristic];
-    
-    // 订阅通知
-    [peripheral setNotifyValue:YES forCharacteristic:self.characteristic];
+//    // 遍历出所需要的特征
+//    for (CBCharacteristic *characteristic in service.characteristics) {
+//        NSLog(@"所有特征：%@", characteristic);
+//        // 从外设开发人员那里拿到不同特征的UUID，不同特征做不同事情，比如有读取数据的特征，也有写入数据的特征
+//    }
+//
+//    // 这里只获取一个特征，写入数据的时候需要用到这个特征
+//    self.characteristic = service.characteristics.lastObject;
+//
+//    // 直接读取这个特征数据，会调用didUpdateValueForCharacteristic
+//    [peripheral readValueForCharacteristic:self.characteristic];
+//
+//    // 订阅通知
+//    [peripheral setNotifyValue:YES forCharacteristic:self.characteristic];
 }
 
-/** 订阅状态的改变 */
--(void)peripheral:(CBPeripheral *)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-    if (error) {
-        NSLog(@"订阅失败");
-        NSLog(@"%@",error);
-    }
-    if (characteristic.isNotifying) {
-        NSLog(@"订阅成功");
-    } else {
-        NSLog(@"取消订阅");
-    }
-}
+///** 订阅状态的改变 */
+//-(void)peripheral:(CBPeripheral *)peripheral didUpdateNotificationStateForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
+//    if (error) {
+//        NSLog(@"订阅失败");
+//        NSLog(@"%@",error);
+//    }
+//    if (characteristic.isNotifying) {
+//        NSLog(@"订阅成功");
+//    } else {
+//        NSLog(@"取消订阅");
+//    }
+//}
 
 /** 接收到数据回调 */
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error {
-    // 拿到外设发送过来的数据
-    NSData *data = characteristic.value;
-//    self.textField.text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSLog(@"%@",data);
+    if(error != nil){
+        _statusLabel.text = @"从设备获取值失败";
+        return;
+    }else{
+        if ([characteristic.UUID.UUIDString isEqual:BATTERY]) {
+            NSData *data = characteristic.value;
+            const uint8_t *bytes = [data bytes];
+            int batteryVal = bytes[0];
+            NSLog(@"battery %d",batteryVal);
+            NSString *content = [NSString stringWithFormat:@"%@电量:%d%%\n",_deviceInfoList.text,batteryVal];
+            self.deviceInfoList.text =@"";
+            self.deviceInfoList.text = content;
+        }
+    }
+//    // 拿到外设发送过来的数据
+//    NSData *data = characteristic.value;
+////    self.textField.text = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//    NSLog(@"%@",data);
 }
 
 /** 写入数据回调 */
@@ -197,12 +224,22 @@
 }
 
 - (IBAction)disconnectPress:(id)sender {
-    
+    [self.centralManager cancelPeripheralConnection:_peripheral];
 }
 
 - (IBAction)shakePress:(id)sender {
+    NSLog(@"shake circle");
+    uint8_t state = 2;
+    uint8_t *bytes = &state;
+    NSData *data = [NSData dataWithBytes:bytes length:1];
+    [_peripheral writeValue:data forCharacteristic:_characteristic type:CBCharacteristicWriteWithoutResponse];
 }
 
 - (IBAction)stopShakePress:(id)sender {
+    NSLog(@"stop shake circle");
+    uint8_t state = 0;
+    uint8_t *bytes = &state;
+    NSData *data = [NSData dataWithBytes:bytes length:1];
+    [_peripheral writeValue:data forCharacteristic:_characteristic type:CBCharacteristicWriteWithoutResponse];
 }
 @end
