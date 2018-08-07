@@ -23,12 +23,15 @@
 @property (nonatomic, strong) NSMutableDictionary *deviceDic;
 @property (nonatomic, weak) id<CBCentralManagerDelegate> delegate;
 
+@property (strong, nonatomic) NSString *bandInfo;
+
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 @property (weak, nonatomic) IBOutlet UIButton *scanDevice;
 @property (weak, nonatomic) IBOutlet UIButton *disconnectDevice;
 @property (weak, nonatomic) IBOutlet UIButton *shakeBtn;
 @property (weak, nonatomic) IBOutlet UIButton *stopShakeBtn;
 @property (weak, nonatomic) IBOutlet UITextView *deviceInfoList;
+
 - (IBAction)scanPress:(id)sender;
 - (IBAction)disconnectPress:(id)sender;
 - (IBAction)shakePress:(id)sender;
@@ -43,6 +46,7 @@
     //创建中心设备管理器，会回调CentralManagerDidUpdateState
     self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
     
+    [_statusLabel setFont: [UIFont fontWithName:@"American Typewriter" size:11.3f]];
     [_deviceInfoList setEditable:false];
     
 }
@@ -63,7 +67,7 @@
         // 根据SERVICE_UUID来扫描外设，如果不设置SERVICE_UUID，则扫描所有蓝牙设备
 //        [central scanForPeripheralsWithServices:@[[CBUUID UUIDWithString:SERVICE_UUID]] options:nil];
 //        [central scanForPeripheralsWithServices:nil options:nil];
-        
+        _statusLabel.text = @"蓝牙可用";
     }
     if(central.state==CBManagerStateUnsupported) {
         NSLog(@"该设备不支持蓝牙");
@@ -82,7 +86,8 @@
 
         // 连接外设
         [central connectPeripheral:peripheral options:nil];
-        self.deviceInfoList.text = [NSString stringWithFormat:@"发现手环\n名称：%@\nUUID:\n%@\n",self.peripheral.name,self.peripheral.identifier.UUIDString];
+        _bandInfo = [NSString stringWithFormat:@"发现手环\n名称：%@\nUUID:\n%@\n",self.peripheral.name,self.peripheral.identifier.UUIDString];
+        self.deviceInfoList.text = _bandInfo;
         NSLog(@"外围设备信号：%lu",_peripheral.RSSI);
     }
     
@@ -98,7 +103,7 @@
     // 根据UUID来寻找服务
 //    [peripheral discoverServices:@[[CBUUID UUIDWithString:SERVICE_UUID]]];
     [peripheral discoverServices:nil];
-
+    _statusLabel.text =@"连接成功!";
     NSLog(@"连接成功");
 }
 
@@ -127,6 +132,7 @@
         self.statusLabel.text =@"查找服务失败";
         return;
     } else {
+        _statusLabel.text = @"正在查找服务....";
         for (CBService *service in peripheral.services) {
             [peripheral discoverCharacteristics:nil  forService:service];
         }
@@ -203,9 +209,8 @@
             const uint8_t *bytes = [data bytes];
             int batteryVal = bytes[0];
             NSLog(@"battery %d",batteryVal);
-            NSString *content = [NSString stringWithFormat:@"%@电量:%d%%\n",_deviceInfoList.text,batteryVal];
-            self.deviceInfoList.text =@"";
-            self.deviceInfoList.text = content;
+            self.deviceInfoList.text = [NSString stringWithFormat:@"%@电量:%d%%\n",_bandInfo,batteryVal];
+            _statusLabel.text = @"服务查找成功！";
         }
     }
 //    // 拿到外设发送过来的数据
