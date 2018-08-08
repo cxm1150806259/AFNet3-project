@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "小米手环"; ObjectID = "3uy-he-agY"; */
+"3uy-he-agY.text" = "小米手环";
+
+/* Class = "UIButton"; normalTitle = "断开设备"; ObjectID = "FQL-MF-6qR"; */
+"FQL-MF-6qR.normalTitle" = "断开设备";
+
+/* Class = "UIButton"; normalTitle = "扫描设备"; ObjectID = "QrI-wx-P4h"; */
+"QrI-wx-P4h.normalTitle" = "扫描设备";
+
+/* Class = "UIButton"; normalTitle = "停止振动"; ObjectID = "T3p-zh-zO5"; */
+"T3p-zh-zO5.normalTitle" = "停止振动";
+
+/* Class = "UIButton"; normalTitle = "振动"; ObjectID = "jY0-b1-jQA"; */
+"jY0-b1-jQA.normalTitle" = "振动";

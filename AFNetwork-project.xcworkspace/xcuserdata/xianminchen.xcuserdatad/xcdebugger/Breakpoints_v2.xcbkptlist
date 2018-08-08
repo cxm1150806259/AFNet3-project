@@ -74,7 +74,7 @@
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-                  timestampString = "555317970.291115"
+                  timestampString = "555406404.937209"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
@@ -89,7 +89,7 @@
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-                  timestampString = "555317970.292872"
+                  timestampString = "555406404.938858"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
@@ -104,7 +104,7 @@
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-                  timestampString = "555317970.294507"
+                  timestampString = "555406404.94043"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
@@ -232,7 +232,7 @@
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-                  timestampString = "555317970.3066469"
+                  timestampString = "555406404.954931"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
@@ -247,7 +247,7 @@
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-                  timestampString = "555317970.308251"
+                  timestampString = "555406404.956629"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
@@ -262,7 +262,7 @@
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-                  timestampString = "555317970.310167"
+                  timestampString = "555406404.958344"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "66"
@@ -277,7 +277,7 @@
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-                  timestampString = "555317970.311711"
+                  timestampString = "555406404.960572"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "70"
@@ -292,7 +292,7 @@
                   moduleName = "AFNetwork-project"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xianminchen/Desktop/novel_freedom-master/AFNet3-project/AFNetwork-project/MKAFNetTool/AFNetworkClient.m"
-                  timestampString = "555317970.313326"
+                  timestampString = "555406404.962635"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "69"
@@ -379,11 +379,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.0636539"
+            timestampString = "555406404.864212"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "-centralManagerDidUpdateState:"
             landmarkType = "7">
          </BreakpointContent>
@@ -395,11 +395,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.064065"
+            timestampString = "555406404.864305"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "ViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -411,11 +411,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.064389"
+            timestampString = "555406404.864381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "-didReceiveMemoryWarning"
             landmarkType = "7">
          </BreakpointContent>
@@ -427,27 +427,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.064703"
+            timestampString = "555406404.8644511"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "ViewController()"
-            landmarkType = "2">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.065016"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
             landmarkName = "-scanPress:"
             landmarkType = "7">
          </BreakpointContent>
@@ -455,15 +439,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.06533"
+            timestampString = "555406404.864521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-centralManagerDidUpdateState:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AFNetwork-project/ViewController.m"
+            timestampString = "555406404.864589"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "-centralManagerDidUpdateState:"
             landmarkType = "7">
          </BreakpointContent>
@@ -475,27 +475,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.065629"
+            timestampString = "555406404.864657"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "-centralManagerDidUpdateState:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.065928"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "-peripheral:didWriteValueForCharacteristic:error:"
             landmarkType = "7">
          </BreakpointContent>
@@ -507,11 +491,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.066254"
+            timestampString = "555406404.864723"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "-peripheral:didDiscoverServices:"
             landmarkType = "7">
          </BreakpointContent>
@@ -523,23 +507,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.066533"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "162"
-            endingLineNumber = "162"
-            landmarkName = "-peripheral:didDiscoverCharacteristicsForService:error:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.066807"
+            timestampString = "555406404.864789"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "168"
@@ -551,15 +519,31 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AFNetwork-project/ViewController.m"
+            timestampString = "555406404.8648551"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "-peripheral:didDiscoverCharacteristicsForService:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.067077"
+            timestampString = "555406404.8649189"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "211"
-            endingLineNumber = "211"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "-peripheral:didUpdateValueForCharacteristic:error:"
             landmarkType = "7">
          </BreakpointContent>
@@ -571,11 +555,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.067341"
+            timestampString = "555406404.864987"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
+            startingLineNumber = "214"
+            endingLineNumber = "214"
             landmarkName = "-peripheral:didUpdateValueForCharacteristic:error:"
             landmarkType = "7">
          </BreakpointContent>
@@ -587,11 +571,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.067603"
+            timestampString = "555406404.8650531"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
             landmarkName = "-shakePress:"
             landmarkType = "7">
          </BreakpointContent>
@@ -603,11 +587,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.067852"
+            timestampString = "555406404.865118"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "240"
-            endingLineNumber = "240"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
             landmarkName = "-shakePress:"
             landmarkType = "7">
          </BreakpointContent>
@@ -619,11 +603,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.068101"
+            timestampString = "555406404.865183"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
             landmarkName = "-disconnectPress:"
             landmarkType = "7">
          </BreakpointContent>
@@ -635,11 +619,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.068351"
+            timestampString = "555406404.865249"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "-peripheral:didDiscoverServices:"
             landmarkType = "7">
             <Locations>
@@ -683,11 +667,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.0685951"
+            timestampString = "555406404.865315"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "-peripheral:didDiscoverServices:"
             landmarkType = "7">
          </BreakpointContent>
@@ -699,11 +683,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.068839"
+            timestampString = "555406404.865381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "-centralManager:didDisconnectPeripheral:error:"
             landmarkType = "7">
          </BreakpointContent>
@@ -715,11 +699,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.069083"
+            timestampString = "555406404.865448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "-centralManager:didConnectPeripheral:"
             landmarkType = "7">
          </BreakpointContent>
@@ -731,39 +715,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.069322"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "-centralManager:didDiscoverPeripheral:advertisementData:RSSI:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.0695651"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "-centralManager:didDiscoverPeripheral:advertisementData:RSSI:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.0698"
+            timestampString = "555406404.865514"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
@@ -779,12 +731,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AFNetwork-project/ViewController.m"
-            timestampString = "555318497.07003"
+            timestampString = "555406404.865581"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "-centralManager:didDiscoverPeripheral:advertisementData:RSSI:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AFNetwork-project/ViewController.m"
+            timestampString = "555406404.865647"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-centralManager:didDiscoverPeripheral:advertisementData:RSSI:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AFNetwork-project/ViewController.m"
+            timestampString = "555406404.865712"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "-peripheral:didDiscoverCharacteristicsForService:error:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AFNetwork-project/ViewController.m"
+            timestampString = "555406404.865778"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "-shakePress:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AFNetwork-project/ViewController.m"
+            timestampString = "555406404.865833"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "-shakePress:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

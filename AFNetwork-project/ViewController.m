@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "MKAccountService.h"
-
+#import "tableViewController.h"
+#import "secondeVC.h"
 
 #define SERVICE_UUID        @"CDD1"
 #define CHARACTERISTIC_UUID @"CDD2"
@@ -24,6 +25,7 @@
 @property (nonatomic, weak) id<CBCentralManagerDelegate> delegate;
 
 @property (strong, nonatomic) NSString *bandInfo;
+@property (nonatomic,strong)NSNumber *rssi;
 
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 @property (weak, nonatomic) IBOutlet UIButton *scanDevice;
@@ -31,11 +33,13 @@
 @property (weak, nonatomic) IBOutlet UIButton *shakeBtn;
 @property (weak, nonatomic) IBOutlet UIButton *stopShakeBtn;
 @property (weak, nonatomic) IBOutlet UITextView *deviceInfoList;
+@property (weak, nonatomic) IBOutlet UIButton *switchVC;
 
 - (IBAction)scanPress:(id)sender;
 - (IBAction)disconnectPress:(id)sender;
 - (IBAction)shakePress:(id)sender;
 - (IBAction)stopShakePress:(id)sender;
+- (IBAction)switchVC:(id)sender;
 @end
 
 @implementation ViewController
@@ -43,6 +47,9 @@
 @synthesize deviceInfoList = _deviceInfoList;
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    [self.navigationController setNavigationBarHidden:NO animated:YES];
+   
+    self.title =@"蓝牙测试";
     //创建中心设备管理器，会回调CentralManagerDidUpdateState
     self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
     
@@ -234,6 +241,10 @@
 
 - (IBAction)shakePress:(id)sender {
     NSLog(@"shake circle");
+    if (_peripheral == nil) {
+        _statusLabel.text = @"请先连接设备";
+        return;
+    }
     uint8_t state = 2;
     uint8_t *bytes = &state;
     NSData *data = [NSData dataWithBytes:bytes length:1];
@@ -246,5 +257,11 @@
     uint8_t *bytes = &state;
     NSData *data = [NSData dataWithBytes:bytes length:1];
     [_peripheral writeValue:data forCharacteristic:_characteristic type:CBCharacteristicWriteWithoutResponse];
+}
+
+- (IBAction)switchVC:(id)sender {
+    tableViewController *nextVC = [[tableViewController alloc] init];
+    secondeVC *vc = [[secondeVC alloc]init];
+    [self.navigationController pushViewController:nextVC animated:YES];
 }
 @end
